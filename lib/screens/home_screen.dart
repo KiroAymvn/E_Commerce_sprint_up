@@ -77,7 +77,10 @@ class _HomeScreenState extends State<HomeScreen>
         return Scaffold(
           backgroundColor: AppColor.white,
           appBar: AppBar(
-            actions: [ChangeLanguageButton()],
+            actions: [
+              buildIconButtonWidget(context),
+
+            ],
             title:
             CustomText(text: "home".tr(), color: AppColor.white, size: 25),
             centerTitle: true,
@@ -350,4 +353,5 @@ class _HomeScreenState extends State<HomeScreen>
       },
     );
   }
+
 }

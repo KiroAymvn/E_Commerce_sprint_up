@@ -21,7 +21,7 @@ class FavoriteScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          ChangeLanguageButton()
+          buildIconButtonWidget(context)
         ],
         title: CustomText(text: "my_favorites".tr(), color: AppColor.white, size: 25),
         centerTitle: true,

@@ -44,8 +44,8 @@ class CartScreen extends StatelessWidget {
       ),
       appBar: AppBar(
         actions: [
-          ChangeLanguageButton(),
-            BlocBuilder<CartCubit, CartState>(
+          buildIconButtonWidget(context)
+          ,BlocBuilder<CartCubit, CartState>(
   builder: (context, state) {
     return state.cartList.isEmpty? SizedBox(): IconButton(onPressed: (){context.read<CartCubit>().clearList() ; }, icon: CustomText(text: "Clear all", color: AppColor.lightGrey, size: 15));
   },
