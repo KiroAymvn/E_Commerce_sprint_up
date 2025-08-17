@@ -6,7 +6,7 @@ import 'package:ecommercefinalproj/screens/choose_auth_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';
-
+//***********
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
